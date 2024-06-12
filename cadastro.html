@@ -1,0 +1,65 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro no Site de Compras</title>
+    
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <!-- responsiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro no Site de Compras</h1>
+        <form action="/cadastrar" method="POST">
+            
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+            </div>
+
+            
+            <div class="form-group">
+                <label para="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+            </div>
+
+            
+            <div class="form-group">
+                <label para="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required placeholder="Crie uma senha">
+            </div>
+
+            
+            <div class="form-group">
+                <label para="confirmaSenha">Confirme a Senha:</label>
+                <input type="password" id="confirmaSenha" name="confirmaSenha" required placeholder="Confirme sua senha">
+            </div>
+
+            
+            <div class="form-group">
+                <label para="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required placeholder="Seu endereço completo">
+            </div>
+
+            
+            <div class="form-group">
+                <label para="telefone">Telefone (opcional):</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Seu número de telefone">
+            </div>
+
+           
+            <div class="form-group">
+                <button type="submit" onclick="redirecionar(5173)">Cadastrar</button>
+            </div>
+        </form>
+
+        <script>
+            function redirecionar(porta) {
+              window.location.href = 'http://localhost:' + porta;
+            }
+          </script>
+
+    </div>
+</body>
+</html>
